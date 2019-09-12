@@ -75,7 +75,8 @@
 .simplecolorpicker span.color:hover,
 .simplecolorpicker span.color[data-selected],
 .simplecolorpicker span.color[data-selected]:hover {
-  border: 1px solid #222; /* @gray-dark */
+  box-shadow: 0 5px 12px #999;
+  transform: scale(1.2, 1.2);
 }
 .simplecolorpicker span.color[data-selected]:after {
   color: #fff;
