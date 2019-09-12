@@ -15,9 +15,9 @@
             <label class="control-label">{{field.label|default(key)}}</label>
         </div>
         <select data-colourpicker {{ macro.attr(attr_opt) }}>
-            {% for key, value in field.values %}
-                {% set isSelected =  (key == context.content.get(key|capitalize)) %}
-                <option value="{{key}}"{% if isSelected %} selected="selected"{% endif %}>{{value}}</option>
+            {% for key2, value in field.values %}
+                {% set isSelected =  (key2 == context.content.get(key|capitalize)) %}
+                <option value="{{key2}}"{% if isSelected %} selected="selected"{% endif %}>{{value}}</option>
             {% endfor %}
         </select>
     </div>
